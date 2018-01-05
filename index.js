@@ -76,10 +76,6 @@ AutomationRandomChoice.prototype.setOn = function(on, callback) {
   callback();
 }
 
-AutomationRandomChoice.prototype.getValue = function(callback) {
-  callback(null, this.selectedSensor);
-}
-
 AutomationRandomChoice.prototype.getServices = function() {
   return [this.serviceSwitch, ...this.serviceMotions];
 }
